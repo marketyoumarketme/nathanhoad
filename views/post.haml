@@ -2,10 +2,6 @@
 
 %hr
 
-= partial 'ad'
-
-%hr
-
 %aside
   - @post.related_posts.each do |tag, posts|
     %h3 Recent other posts tagged with #{link_to "##{tag}", "/tags/#{tag}"}
